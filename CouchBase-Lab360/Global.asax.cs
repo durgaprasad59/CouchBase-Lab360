@@ -11,7 +11,8 @@ namespace CouchBase_Lab360
     public class WebApiApplication : System.Web.HttpApplication
     {
         protected void Application_Start()
-        {
+        { 
+
             CouchbaseConfig.setup();
             GlobalConfiguration.Configure(WebApiConfig.Register);
         }
